@@ -1,0 +1,140 @@
+header{
+    height: 100vh;
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+body{
+    margin: 0;
+    font-size: 15px;
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    text-align: center;
+  
+}
+
+*{
+    font-family: monospace;
+}
+.button{
+    height: 40px;
+    width:140px ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+    
+}
+.button:hover{
+    background-color: darkblue;
+    color: white;
+}
+header h1{
+    
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+color: #2196f3;
+margin: 0;
+}
+img{
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 2);
+}
+section{
+    height: 100vh;
+    border: 1px solid gray;
+  margin-bottom   : 20px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+
+
+
+}
+a{
+    text-decoration: none;
+}
+.submit{
+    height: 40px;
+    width:140px ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    background-color: #2195f3;
+}
+.submit:hover{
+    
+    background-color: #2195f3;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 25px;
+}
+footer{
+    background-color: black;
+    color: lightgray;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}/*
+.fixedbutton{
+    position: fixed;
+    bottom: 10px;
+right:10px;
+height: 70px;
+width: 70px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+color:white;
+background-color: #2195f3;
+font-size: 16px;
+*/
+
+ol li{
+    font-size: 20px;
+}
+form div {
+    margin: 5px 0;
+}
+selection div p{
+    text-align: left;
+}
+.fixedbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2196f3, #00c6ff);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.fixedbutton:hover {
+  transform: scale(1.1);
+}
+.about{
+  text-align: center;
+}

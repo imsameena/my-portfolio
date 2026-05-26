@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie App</title>
+</head>
+<body>
+
+  <h2>Movie Search App 🎬</h2>
+
+  <input type="text" id="movie" placeholder="Enter movie name">
+  <button onclick="getMovie()">Search</button>
+
+  <div id="result"></div>
+
+  <script >
+    async function getMovie() {
+
+  let movie = document.getElementById("movie").value.trim();
+
+  if (!movie) {
+    document.getElementById("result").innerText = "Enter a movie name";
+    return;
+  }
+
+  let apiKey = "1237cd8c";
+
+
+  let url = `https://www.omdbapi.com/?t=${movie}&apikey=${apiKey}`;
+
+  try {
+    let response = await fetch(url);
+    let data = await response.json();
+
+    console.log(data);
+
+    if (data.Response === "False") {
+      document.getElementById("result").innerText = "Movie not found";
+      return;
+    }
+
+    document.getElementById("result").innerHTML =
+      `<h3>${data.Title}</h3>
+       <img src="${data.Poster}" width="200">
+       <p>Year: ${data.Year}</p>
+       <p>Rating: ${data.imdbRating}</p>
+       <p>${data.Plot}</p>`;
+    
+  } catch (error) {
+    document.getElementById("result").innerText = "Error fetching data";
+  }
+}
+  </script>
+
+</body>
+</html>

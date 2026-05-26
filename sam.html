@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost & Found</title>
+  <link rel="stylesheet" href="sam.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <h2>🔍 Lost & Found</h2>
+  <div>
+    <button onclick="setType('Lost')" class="btn blue">Report Lost</button>
+<button onclick="setType('Found')" class="btn green">Report Found</button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div>
+    <h1>Lost something?<br>Find it here.</h1>
+    <input type="text" placeholder="Search items..." onkeyup="searchItems()">
+  </div>
+</section>
+<div style="padding:20px;">
+  <button onclick="filterItems('All')">All</button>
+  <button onclick="filterItems('Lost')">Lost</button>
+  <button onclick="filterItems('Found')">Found</button>
+</div>
+<!-- Items Section -->
+<section class="items" id="itemsContainer">
+  <h2>Recent Items</h2>
+</section>
+
+<!-- Form -->
+<section class="form">
+  <h2>Report Item</h2>
+
+  <input id="name" placeholder="Item Name">
+  <input id="location" placeholder="Location">
+  <textarea id="desc" placeholder="Description"></textarea>
+
+  <select id="type">
+    <option value="Lost">Lost</option>
+    <option value="Found">Found</option>
+  </select>
+<input type="file" id="image">
+  <button onclick="addItem()">Submit</button>
+</section>
+
+<script src="sam.js"></script>
+</body>
+</html>

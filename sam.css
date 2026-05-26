@@ -1,0 +1,148 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.blue { background: #3b82f6; }
+.green { background: #10b981; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px;
+}
+
+.hero input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Items */
+.items {
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  display: inline-block;
+  width: 200px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.tag {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.lost { background: red; }
+.found { background: green; }
+
+/* Form */
+.form {
+  padding: 20px;
+}
+
+.form input, .form textarea, .form select {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+}
+
+.form button {
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+.item-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.item-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background: green;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
